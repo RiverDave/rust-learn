@@ -1,4 +1,3 @@
-
 fn main() {
     let mut foo = String::from("This is a str");
     println!("Org str = {}", foo);
@@ -10,10 +9,6 @@ fn main() {
     println!("Org x = {}", x);
     x = do_operation(x);
     println!("Changed x = {}", x);
-
-
-
-
 }
 
 fn changes_it(mut var: String) -> String{
