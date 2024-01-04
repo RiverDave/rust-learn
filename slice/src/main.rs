@@ -33,7 +33,7 @@ fn sentinel_char(wrd: &String, sentinel: char) -> usize {
     let bytes = wrd.as_bytes();
 
     for (i, &index) in bytes.iter().enumerate(){
-        if index == sentinel as u8 {
+        if index == sentinel as u8 { //casting sentinel
             return i;
         }
     }
